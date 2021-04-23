@@ -6,13 +6,13 @@ public class Cassett implements AnalogAlbum {
     int currentIndex;
 
     public Cassett(String song1, String song2, String song3, String song4, String song5) {
-        song1 = "";
-        song2 = "";
-        song3 = "";
-        song4 = "";
-        song5 = "";
-        this.currentIndex = currentIndex;
-        ArrayList<String> songs = new ArrayList<String>();
+       songs.add("A hard Day's Night");
+        songs.add("I should Have Known Better");
+        songs.add("If I Fell");
+        songs.add("I'm Happy Just To Dance With You");
+        songs.add("And I Love Her");
+        this.currentIndex = 0;
+        songs = new ArrayList<String>();
     }
 
     @Override
