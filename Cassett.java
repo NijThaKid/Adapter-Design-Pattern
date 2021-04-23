@@ -6,28 +6,35 @@ public class Cassett implements AnalogAlbum {
     int currentIndex;
 
     public Cassett(String song1, String song2, String song3, String song4, String song5) {
-       songs.add("A hard Day's Night");
-        songs.add("I should Have Known Better");
-        songs.add("If I Fell");
-        songs.add("I'm Happy Just To Dance With You");
-        songs.add("And I Love Her");
-        this.currentIndex = 0;
-        songs = new ArrayList<String>();
+      songs.add(song1); 
+      songs.add(song2);
+      songs.add(song3);
+      songs.add(song4);
+      songs.add(song5);
+      songs = new ArrayList<String>();
     }
 
     @Override
     public String play() {
-        return null;
-
-    }
+        if(currentIndex == (songs.size()))
+            return "At the end of the cassett you need to rewind";
+            currentIndex++;
+            return "Playing song " + (currentIndex) + ":" + songs.get(currentIndex-1);
+        }
     @Override
     public String rewind() {
-        return null;
-
+        if(currentIndex == 0)
+            return "Fully Re-Wounded";
+            currentIndex--;
+            return "Rewinding to song" + (currentIndex+1);
     }
     @Override
     public String ffwd() {
-        return null;
+        if(currentIndex == 1)
+        return "Forwarding to song";
+        currentIndex++;
+        return "At the end of cassett you need to rewind" + (currentIndex);
+
 
     }
     @Override
@@ -40,8 +47,4 @@ public class Cassett implements AnalogAlbum {
         return "Stopping cassett and ejecting";
 
     }
-
-
-
-    
 }
