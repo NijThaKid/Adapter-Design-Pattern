@@ -13,6 +13,7 @@ public class CD implements DigitalAlbum {
         songs.add(song4);
         songs.add(song5);
         songs = new ArrayList<String>();
+        System.out.println(songs);
     }
     
     public String playFromBeginning() {

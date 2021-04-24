@@ -12,6 +12,8 @@ public class Cassett implements AnalogAlbum {
       songs.add(song4);
       songs.add(song5);
       songs = new ArrayList<String>();
+      System.out.println(songs);
+      
     }
 
     @Override
