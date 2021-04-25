@@ -1,3 +1,6 @@
+/**
+ * @author Nijel Felder
+ */
 public interface DigitalAlbum {
 
     public String playFromBeginning();

@@ -1,3 +1,6 @@
+/**
+ * @author Nijel Felder
+ */
 public class AnalogAdapter implements AnalogAlbum {
     DigitalAlbum album;
 
@@ -10,7 +13,7 @@ public class AnalogAdapter implements AnalogAlbum {
 
     }
     public String rewind() {
-        return album.stop();
+        return album.prevSong();
 
     }
     public String ffwd() {
